@@ -1,6 +1,6 @@
 ## Как мокать данные с сервера
 
-создаем db.json
+_Шаг 1_: создаем db.json
 
 ```json
 
@@ -20,24 +20,23 @@
   }
 ```
 
-2: Устанавливаем json-server
+_Шаг 2_: Устанавливаем json-server  
 ```
 npm install -g json-server
 ```
-
-Step 3: Стартуем JSON-сервер
+  
+_Шаг 3_: Стартуем JSON-сервер  
 ```
 json-server --watch db.json --port 3030
-```
+```  
 Note: React utilizes the 3000 port, which json-server uses to run the server, thus we used — port 3030 to modify the port.
-
-4: Тестируем API
+  
+_Шаг 4:_ Тестируем API  
 Тепер, если открыть http://localhost:3030/posts мы сможем увидеть data
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/c6fc10a5-843e-4c2a-ab2b-b1cdc8a6b6a9)
 
-
-5: Делаем API запрос в React
-например классический пример:
+_Шаг 5:_ Делаем API запрос в React  
+например классический пример:  
 ```
 import React, { useState, useEffect } from "react";
 
@@ -76,14 +75,15 @@ const App = () => {
 
 export default App;
 ```
-Доступны все операции
-POST  
+
+Доступны все операции  
+**POST**  
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/490cbe5b-92c5-498b-bb51-29dbb078d6ed)
 
-PUT  
+**PUT**  
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/c5b8d2b0-24e5-4792-b37d-aee1435f9240)
 
-DELETE  
+**DELETE**  
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/ab0a1cbb-0ea1-41eb-8c01-3ee93efa2257)
 
 
