@@ -5,7 +5,7 @@
 [Как мокать данные с сервера](#mockserver)  
 [Ахитектура без длинных путей в импорте](#importsways)  
 [fetch with useTransition](#usetransition)  
-[props и children в пользовательский компонент](#propschildren) 
+[props и children в пользовательский компонент](#propschildren)  
 [почему хуки нельзя использовать в if и for](#hooksif)  
   
 ---  
