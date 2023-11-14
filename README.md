@@ -3,6 +3,7 @@
 ---  
 [Как мокать данные с сервера](#mockserver)  
 [Ахитектура без длинных путей в импорте](#importsways)  
+[fetchin with useTransition](#usetransition)  
   
 <a id="mockserver"></a>
 ## Как мокать данные с сервера
@@ -145,6 +146,7 @@ export * from './moduleC';
 import { someFunctionFromModuleA, someVariableFromModuleB } from './public-api';  
 ```
 
+<a id="usetransition"></a>  
 ## Basic fetching data with useTransition  
 today weather in Saint.P  
 ```typescript
