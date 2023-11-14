@@ -1,10 +1,16 @@
 ### [Typescript notes](ts.md)
 
 ---  
+  
 [Как мокать данные с сервера](#mockserver)  
 [Ахитектура без длинных путей в импорте](#importsways)  
 [fetch with useTransition](#usetransition)  
-[props и children в пользовательский компонент](#propschildren)
+[props и children в пользовательский компонент](#propschildren)  
+  
+---  
+[Access и refresh токены](tokens.md)  
+
+---
   
 <a id="mockserver"></a>
 ## Как мокать данные с сервера
