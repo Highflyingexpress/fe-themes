@@ -13,7 +13,7 @@
 ---
   
 <a id="mockserver"></a>
-### Как мокать данные с сервера
+## Как мокать данные с сервера
 
 _Шаг 1_: **создаем db.json**
 
@@ -104,7 +104,7 @@ export default App;
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/ab0a1cbb-0ea1-41eb-8c01-3ee93efa2257)
   
 <a id="importsways"></a>
-### Архитектура. Как не писать в импортах длинные пути к файлам.
+## Архитектура. Как не писать в импортах длинные пути к файлам.
   
 **public-api.ts + index.ts**   
 1) `index.ts` в каждой папке, который экспортирует все файлы из папки  
@@ -214,7 +214,7 @@ export default App;
 ```  
   
 <a id="propschildren"></a>  
-### props и children от родителя к чаилду  
+## props и children от родителя к чаилду  
   
 ```javascript
 import React, { useState } from 'react';
