@@ -1,6 +1,6 @@
 ## JSX global
 
-``typescript
+```typescript
 // global.d.ts
 
 declare namespace JSX {
