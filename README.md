@@ -84,10 +84,57 @@ export default App;
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/490cbe5b-92c5-498b-bb51-29dbb078d6ed)
 
 **PUT**  
-![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/c5b8d2b0-24e5-4792-b37d-aee1435f9240)
+![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/c5b8d2b0-24e5-4792-b37d-aee1435f9240)  
 
 **DELETE**  
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/ab0a1cbb-0ea1-41eb-8c01-3ee93efa2257)
+
+## Архитектура. Как не писать в импортах длинные пути к файлам.
+  
+Вы можете использовать файл public-api.ts в каждой папке для сбора и экспорта всех файлов. Для этого в каждой папке, где у вас есть файлы, создайте index.ts, который будет экспортировать эти файлы, а затем в public-api.ts соберите все экспорты из всех папок.
+
+Пример структуры проекта:
+```
+/src
+  /moduleA
+    - fileA1.ts
+    - fileA2.ts
+    - index.ts
+  /moduleB
+    - fileB1.ts
+    - fileB2.ts
+    - index.ts
+  /moduleC
+    - fileC1.ts
+    - fileC2.ts
+    - index.ts
+  - public-api.ts
+```
+Пример содержимого файлов:
+```
+// moduleA/index.ts
+export * from './fileA1';
+export * from './fileA2';
+
+// moduleB/index.ts
+export * from './fileB1';
+export * from './fileB2';
+
+// moduleC/index.ts
+export * from './fileC1';
+export * from './fileC2';
+
+// public-api.ts
+export * from './moduleA';
+export * from './moduleB';
+export * from './moduleC';
+```
+
+`public-api.ts` собирает все экспорты в одном месте  
+
+  // Другие файлы в проекте
+import { someFunctionFromModuleA, someVariableFromModuleB } from './public-api';  
+  
 
 
 
