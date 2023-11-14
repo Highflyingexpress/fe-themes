@@ -3,7 +3,7 @@
 ---  
 [Как мокать данные с сервера](#mockserver)  
 [Ахитектура без длинных путей в импорте](#importsways)  
-[fetchin with useTransition](#usetransition)  
+[fetch with useTransition](#usetransition)  
   
 <a id="mockserver"></a>
 ## Как мокать данные с сервера
