@@ -1,6 +1,6 @@
 ## Как мокать данные с сервера
 
-_Шаг 1_: создаем db.json
+_Шаг 1_: **создаем db.json**
 
 ```json
 
@@ -20,25 +20,24 @@ _Шаг 1_: создаем db.json
   }
 ```
   
-_Шаг 2_: Устанавливаем json-server  
+_Шаг 2_: **Устанавливаем json-server**  
   
 ```
 npm install -g json-server
 ```
   
-_Шаг 3_: Стартуем JSON-сервер  
+_Шаг 3_: **Стартуем JSON-сервер**  
   
 ```
 json-server --watch db.json --port 3030
 ```  
 Note: React utilizes the 3000 port, which json-server uses to run the server, thus we used — port 3030 to modify the port.
   
-_Шаг 4:_ Тестируем API  
+_Шаг 4:_ **Тестируем API**  
   
 Тепер, если открыть http://localhost:3030/posts мы сможем увидеть data
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/c6fc10a5-843e-4c2a-ab2b-b1cdc8a6b6a9)
-
-_Шаг 5:_ Делаем API запрос в React  
+_Шаг 5:_ **Делаем API запрос в React**   
 например классический пример:  
 ```
 import React, { useState, useEffect } from "react";
