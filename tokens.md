@@ -17,11 +17,11 @@ const App = () => {
     // Assuming it returns tokens in the response
     const response = await authenticateUser();
 
-    // Update state and set cookies
+    // Update state and set cookies with httpOnly flag
     setAccessToken(response.accessToken);
     setRefreshToken(response.refreshToken);
-    Cookies.set('access_token', response.accessToken, { path: '/' });
-    Cookies.set('refresh_token', response.refreshToken, { path: '/' });
+    Cookies.set('access_token', response.accessToken, { path: '/', httpOnly: true });
+    Cookies.set('refresh_token', response.refreshToken, { path: '/', httpOnly: true });
   };
 
   // Example function to refresh the access token using the refresh token
@@ -30,9 +30,9 @@ const App = () => {
     // Assuming it returns a new access token in the response
     const response = await refreshTokens(refreshToken);
 
-    // Update state and set the new access token cookie
+    // Update state and set the new access token cookie with httpOnly flag
     setAccessToken(response.accessToken);
-    Cookies.set('access_token', response.accessToken, { path: '/' });
+    Cookies.set('access_token', response.accessToken, { path: '/', httpOnly: true });
   };
 
   // Example useEffect to refresh the access token when it's expired
