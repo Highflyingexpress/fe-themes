@@ -3,12 +3,14 @@
 
 ```
 // экшн для сохранения токенов в состоянии Redux
+
 const setTokens = (accessToken, refreshToken) => ({
   type: 'SET_TOKENS',
   payload: { accessToken, refreshToken },
 });
 
-// Редьюсер для обновления состояния с токенами
+// редьюсер для обновления состояния с токенами
+
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_TOKENS':
