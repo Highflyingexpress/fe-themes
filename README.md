@@ -131,10 +131,11 @@ export * from './moduleB';
 export * from './moduleC';
 ```
 
-`public-api.ts` собирает все экспорты в одном месте  
-
+`public-api.ts` собирает все экспорты в одном месте   
+```
   // Другие файлы в проекте
 import { someFunctionFromModuleA, someVariableFromModuleB } from './public-api';  
+```
   
 
 
