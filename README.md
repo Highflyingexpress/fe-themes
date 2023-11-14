@@ -136,7 +136,73 @@ export * from './moduleC';
   // Другие файлы в проекте
 import { someFunctionFromModuleA, someVariableFromModuleB } from './public-api';  
 ```
-  
+
+## Basic fetching data with useTransition  
+today weather in Saint.P  
+```
+import React, { useEffect, useState, useTransition } from "react";
+
+interface Location {
+  country: string;
+}
+
+interface Current {
+  temp_c: number; 
+}
+
+interface WeatherResponse {
+  location: Location;
+  current: Current;
+}
+
+const api = "b187fa2d8b7047e88f780241231411"; // api key
+
+const App: React.FC = () => {
+  const [data, setData] = useState<WeatherResponse | null>(null);
+  const [isPending, startTransition] = useTransition(); // React 18' hook was born
+
+  useEffect(() => {
+    const fetchData = async (): Promise<void> => {
+      try {
+        await startTransition(async () => {
+          const response = await fetch(
+            `https://api.weatherapi.com/v1/current.json?key=${api}&q=Saint-Petersburg&aqi=no`
+          );
+
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+
+          const responseData: WeatherResponse = await response.json();
+          setData(responseData);
+        });
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []); // empty dependency array for initial render
+
+  return (
+    <div>
+      {isPending ? (
+        <p>Loading...</p>
+      ) : (
+        data && (
+          <>
+            <h1>{data.location.country}</h1>
+            <p>Temperature: {data.current.temp_c}°C</p>
+          </>
+        )
+      )}
+    </div>
+  );
+};
+
+export default App;
+```
+
 
 
 
