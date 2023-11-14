@@ -4,6 +4,7 @@
 [Как мокать данные с сервера](#mockserver)  
 [Ахитектура без длинных путей в импорте](#importsways)  
 [fetch with useTransition](#usetransition)  
+[props и children в пользовательский компонент](#propschildren)
   
 <a id="mockserver"></a>
 ## Как мокать данные с сервера
@@ -200,6 +201,40 @@ const App: React.FC = () => {
           </>
         )
       )}
+    </div>
+  );
+};
+export default App;
+```  
+
+<a id="propschildren"></a>  
+## props и children от родителя к чаилду  
+  
+```javascript
+import React, { useState } from 'react';
+
+const Counter = ({children, ...props}) => {
+  const [count, setCount] = useState(0);
+  const handleChange = () => {
+    setCount((prev) => prev + 1);
+  };
+
+  return ( 
+    <div {...props}>
+      <span> {children} </span>
+      <button onClick={handleChange}>Click me</button>
+      <strong>{count}</strong>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="App">
+      <Counter style={{ color: 'red' }} />
+      <Counter className="myclass" />
+      <Counter>Counter:</Counter>
+      <Counter />
     </div>
   );
 };
