@@ -1,5 +1,10 @@
 ### [Typescript notes](ts.md)
 
+---  
+[Как мокать данные с сервера](#mockserver)
+[Ахитектура без длинных путей в импорте](#importsways)
+
+<a id="mockserver"></a>
 ## Как мокать данные с сервера
 
 _Шаг 1_: **создаем db.json**
@@ -90,6 +95,7 @@ export default App;
 **DELETE**  
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/ab0a1cbb-0ea1-41eb-8c01-3ee93efa2257)
 
+<a id="importsways"></a>
 ## Архитектура. Как не писать в импортах длинные пути к файлам.
   
 **public-api.ts + index.ts**   
