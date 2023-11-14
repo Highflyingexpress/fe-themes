@@ -39,7 +39,7 @@ _Шаг 4:_ **Тестируем API**
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/c6fc10a5-843e-4c2a-ab2b-b1cdc8a6b6a9)
 _Шаг 5:_ **Делаем API запрос в React**   
 например классический пример:  
-```ReactJS
+```React
 import React, { useState, useEffect } from "react";
 
 const App = () => {
