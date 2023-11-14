@@ -1,5 +1,8 @@
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/46e99a71-e504-4c0b-911a-7b5780c9c71f)  
-  
+
+**CSRF**  Cross-Site Request Forgery (CSRF) - атака, при которой происходит выполнение несанкционированного запроса от лица пользователя к ресурсу, на котором пользователь в данный момент аутентифицирован  
+**XSS** Cross-Site Scripting (XSS) - атака, подразумевающая внедрение злоумышленником и исполнение в браузере жертвы [вредоносного] JavaScript-кода.   
+
 ## js-cookie  lib
 
 `npm install js-cookie`
