@@ -139,17 +139,11 @@ import { someFunctionFromModuleA, someVariableFromModuleB } from './public-api';
 
 ## Basic fetching data with useTransition  
 today weather in Saint.P  
-```
+```typescript
 import React, { useEffect, useState, useTransition } from "react";
 
-interface Location {
-  country: string;
-}
-
-interface Current {
-  temp_c: number; 
-}
-
+interface Location {  country: string; }
+interface Current {  temp_c: number; }
 interface WeatherResponse {
   location: Location;
   current: Current;
