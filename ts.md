@@ -1,4 +1,4 @@
-## JSX global
+### JSX global
 
 ```typescript
 // global.d.ts
