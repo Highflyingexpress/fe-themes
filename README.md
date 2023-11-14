@@ -1,4 +1,4 @@
-[typescript notes](ts.md)
+### [Typescript notes](ts.md)
 
 ## Как мокать данные с сервера
 
