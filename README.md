@@ -7,7 +7,7 @@
 [fetch with useTransition](#usetransition)  
 [props и children в пользовательский компонент](#propschildren)  
 [почему хуки нельзя использовать в if и for](#hooksif)  
-[Symbol](#symbol  
+[Symbol](#symbol)  
 [javascript задачка f(x)](#jstask)  
   
 ---  
