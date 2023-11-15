@@ -1,3 +1,5 @@
+[resource](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)
+
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/46e99a71-e504-4c0b-911a-7b5780c9c71f)  
 
 **CSRF**  Cross-Site Request Forgery (CSRF) - атака, при которой происходит выполнение несанкционированного запроса от лица пользователя к ресурсу, на котором пользователь в данный момент аутентифицирован  
