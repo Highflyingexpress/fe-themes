@@ -272,3 +272,22 @@ alert( id === idAgain ); // true
  Object.assign, в отличие от цикла for..in, копирует и строковые, и символьные свойства  
 
   Технически символы скрыты не на 100%. Существует встроенный метод `Object.getOwnPropertySymbols(obj)` – с его помощью можно получить все свойства объекта с ключами-символами. Также существует метод `Reflect.ownKeys(obj)`, который возвращает все ключи объекта, включая символьные.
+
+Если метод Symbol.toPrimitive существует, он используется для всех хинтов, и больше никаких методов не требуется.  
+  
+```javascript
+let user = {
+  name: "John",
+  money: 1000,
+
+  [Symbol.toPrimitive](hint) {
+    alert(`hint: ${hint}`);
+    return hint == "string" ? `{name: "${this.name}"}` : this.money;
+  }
+};
+
+// демонстрация результатов преобразований:
+alert(user); // hint: string -> {name: "John"}
+alert(+user); // hint: number -> 1000
+alert(user + 500); // hint: default -> 1500
+```
