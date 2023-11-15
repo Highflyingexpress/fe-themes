@@ -1,5 +1,6 @@
 [resource](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)  
-[medium](https://medium.com/nuances-of-programming/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E-jwt-%D0%B2%D0%BE-%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D1%85-graphql-b9b5103062a3)
+[medium](https://medium.com/nuances-of-programming/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E-jwt-%D0%B2%D0%BE-%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D1%85-graphql-b9b5103062a3)  
+[статья](https://habr.com/ru/articles/710552/)
 
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/46e99a71-e504-4c0b-911a-7b5780c9c71f)  
 
