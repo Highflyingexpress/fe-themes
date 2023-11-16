@@ -1,4 +1,7 @@
-#### [Typescript notes](ts.md)
+#### [Typescript notes](ts.md)  
+#### [DevTools](devtools.md)
+#### [tokens](tokens.md)  
+#### [Git magic](gitmagic.md)
 
 ---  
   
