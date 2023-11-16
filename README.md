@@ -296,6 +296,9 @@ alert(user); // hint: string -> {name: "John"}
 alert(+user); // hint: number -> 1000
 alert(user + 500); // hint: default -> 1500
 ```
+
+![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/b63c4cfe-0714-4d02-abf7-760924330341)  
+  
   
 <a id="jstask"></a> 
 ## JS задачки  
