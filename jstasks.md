@@ -8,6 +8,7 @@
 ```javascript
 let arr = Array.from({length:10}).map((v,k)=>k)
 ```
+</details>
   
 ---
   
