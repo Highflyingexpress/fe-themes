@@ -1,9 +1,10 @@
-<details><summary>```javascript
+```javascript
   const foo = (arr) => {}
   console.log(foo([1,1,1,2,2,2,2,4,4,5,0])) // [2,1,4,5,0]
-```</summary>
+```
+<details><summary> </summary>
 ```javascript
-const foo = (arr) => {
+  const foo = (arr) => {
    let obj = {}
    for (let item of arr) {
      obj[item] = (obj[item] ?? 0) + 1
