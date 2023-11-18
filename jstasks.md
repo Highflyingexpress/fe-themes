@@ -346,7 +346,18 @@ console.log(sumAge(user1)) // 100
 <details><summary> </summary>
 
 ```javascript
-  
+  function sumAge(user) {
+    let res = 0;
+    let stack = [user]
+    while (stack.length) {
+      let obj = stack.pop()
+        for (let key in obj) {
+          if (key ==='age') res += obj['age']
+          if (Array.isArray(obj[key])) stack.push(...obj[key])
+        }
+    }
+    return res
+  }
 ```
   
 </details>
