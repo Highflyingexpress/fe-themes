@@ -253,6 +253,34 @@ console.log(optionalChaining(obj, "")); /* Ответ = {
 <details><summary> </summary>
 
 ```javascript
+  const optionalChaining = (o, path) => {
+  if (!path.length) return o;
+  
+  let paths = path.split('.')
+  let obj = {...o}
+             
+  for (let chain of paths) {
+    if (obj[chain]) obj = obj[chain] 
+    else return undefined
+  }
+  return obj
+}
+```
+  
+</details>
+  
+---
+  
+#### carry
+
+```javascript
+ f(3)(4) // 7 карри изи
+ f(1,6)(8)() // общий карри
+```
+  
+<details><summary> </summary>
+
+```javascript
 
 ```
   
