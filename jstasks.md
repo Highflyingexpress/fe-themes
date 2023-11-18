@@ -129,3 +129,46 @@ const flatten = (arr) => {
   
 ---
   
+#### повернутый палиндром  
+
+```
+CBAABCD это повернутый палиндром ABCDCBA.
+BAABCC это повернутый палиндром ABCCBA
+```
+
+#### валидация скоб
+  
+---
+
+```javascript
+function isBalanced(str) {}
+
+console.log(isBalanced("(x + y) - (4)")); // -> true
+console.log(isBalanced("(((10 ) ()) ((?)(:)))")); // -> true
+console.log(isBalanced("[({()})]")); // -> true
+console.log(isBalanced("(50)((")); // -> false
+```
+<details><summary> </summary>
+```javascript
+  function isBalanced(str) {
+  let stack = []
+  let braces = {
+    '{':'}',
+    '[':']',
+    '(':')',
+  }
+  let bracesArr = Object.keys(braces).join('') + Object.values(braces).join('')
+  console.log(bracesArr)
+  for (let char of str) {
+    if (bracesArr.includes(char)) {
+     if (braces[char]) stack.push(char) // открытая
+      else {
+        if (braces[stack.pop()] !== char ) return false
+      }
+    }
+  }
+  if (stack.length) return false
+  else return true
+}
+```
+</details>
