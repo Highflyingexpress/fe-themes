@@ -307,3 +307,46 @@ console.log( sum(1,5)(2)() ); // 8
 ```
   
 </details>
+  
+---
+
+#### 
+
+```javascript
+function sumAge(user) {}
+
+const user1 = {
+    name: 'Петр',
+    age: 49,
+    children: [
+        {
+            name: 'Нина',
+            age: 25,
+            children: [
+                {
+                    name: 'Андрей',
+                    age: 3,
+                },
+                {
+                    name: 'Олег',
+                    age: 1,
+                }
+          ]
+        },
+        {
+            name: 'Александр',
+            age: 22,
+        }
+    ]
+}
+
+console.log(sumAge(user1)) // 100
+```
+
+<details><summary> </summary>
+
+```javascript
+  
+```
+  
+</details>
