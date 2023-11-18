@@ -100,8 +100,8 @@ const flatten = (arr) => {
 
 ```
  const a = [1,3,4];
- * const b = [2,3,5];
- * merge(a, b);  // [1,2,3,3,4,5]
+ const b = [2,3,5];
+ merge(a, b);  // [1,2,3,3,4,5]
 ```
   
 <details><summary> </summary>
