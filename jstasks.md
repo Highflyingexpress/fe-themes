@@ -361,3 +361,40 @@ console.log(sumAge(user1)) // 100
 ```
   
 </details>
+
+#### bankomat  
+
+```javascript
+const bancomat = (money) => {};
+//доступные купюры 100, 50, 20, 10
+console.log(bancomat(280)); // [100, 100, 50, 20, 10]
+```
+
+<details><summary> </summary>
+  
+```javascript
+// классическая задача
+const bancomat = (money) => {
+  return [100, 50, 20, 10].reduce((acc, coin) => {
+    while(coin<=money) {
+      acc.push(coin)
+      money-=coin
+    }
+    return acc
+  }, [])
+};
+
+// задача, где нужно выводить объект каких купюр сколько
+
+const bancomat = (price, arr) => {
+ res = {}
+ for (let coin of arr) {
+   count = Math.floor(price / coin)
+   price -= count*coin
+   res[coin] = count
+ }
+  return res
+};
+
+```
+</details>
