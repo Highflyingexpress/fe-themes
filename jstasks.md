@@ -108,21 +108,21 @@ Output: [1, 2, 3, 4, 5, 6, 7]
 
 ```javascript
   function merge(a, b) {
-  let i = a.length - 1;
-  let j = b.length - 1;
-  let end = a.length + b.length - 1;
-  
-  while (j >= 0) {
-    if (i >= 0 && a[i] > b[j]) {
-      a[end] = a[i];
-      i--;
-    } else {
-      a[end] = b[j];
-      j--;
+    let i = a.length - 1;
+    let j = b.length - 1;
+    let end = a.length + b.length - 1;
+    
+    while (j >= 0) {
+      if (i >= 0 && a[i] > b[j]) {
+        a[end] = a[i];
+        i--;
+      } else {
+        a[end] = b[j];
+        j--;
+      }
+      end--;
     }
-    end--;
-  }
-  return a
+    return a
 }
 ```
 </details>
