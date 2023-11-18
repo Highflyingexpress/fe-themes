@@ -281,7 +281,29 @@ console.log(optionalChaining(obj, "")); /* Ответ = {
 <details><summary> </summary>
 
 ```javascript
+  function sum(...args) {
+  if (!args.length) return 0
+  let res = args.reduce((a,b)=>a+b)
+  return function inner(...nextArgs) {
+    if(!nextArgs.length) return res 
+    else return sum(res, ...nextArgs)
+  }
+}
 
+console.log( sum(1,5)(2)() ); // 8
+
+// изи
+// function sum(a, b) {
+//   if (b===undefined) {
+//     return function inner(c) {
+//       return a+c
+//     }
+//   }
+//   else return a+b
+// }
+
+// console.log(sum(5,4))
+// console.log(sum(5)(4))
 ```
   
 </details>
