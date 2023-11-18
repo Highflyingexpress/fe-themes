@@ -135,10 +135,10 @@ const flatten = (arr) => {
 CBAABCD это повернутый палиндром ABCDCBA.
 BAABCC это повернутый палиндром ABCCBA
 ```
-
-#### валидация скоб
   
 ---
+  
+#### валидация скоб
 
 ```javascript
 function isBalanced(str) {}
