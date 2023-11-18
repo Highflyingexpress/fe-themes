@@ -1,3 +1,6 @@
+#### [Promise hell](promicehell.md)  
+
+  
 #### создать массив от 0 до 9
 
 ```
