@@ -219,5 +219,41 @@ console.log(memoDivide(4, 2)) // 2
 </details>
   
 ---
+  
+#### chaining
+
+```javascript
+const obj = {
+  a: {
+    b: {
+      c: {
+        d: "Привет!",
+      },
+    },
+  },
+};
 
 
+const optionalChaining = (o, path) => {}
+console.log(optionalChaining(obj, "a.b.c")); // Ответ = { d: 'Привет' }
+console.log(optionalChaining(obj, "a.b.c.d")); // Ответ = Привет
+console.log(optionalChaining(obj, "a.b.c.d.e")); // Ответ = undefined
+console.log(optionalChaining(obj, "b.d.a")); // Ответ = undefined
+console.log(optionalChaining(obj, "")); /* Ответ = {
+//   a: {
+//     b: {
+//       c: {
+//         d: 'Привет!',
+//       },
+//     },
+//   },
+// } 
+// */
+```
+<details><summary> </summary>
+
+```javascript
+
+```
+  
+</details>
