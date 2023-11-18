@@ -204,7 +204,16 @@ console.log(memoDivide(4, 2)) // 2
 <details><summary> </summary>
 
 ```javascript
- 
+ const memo = (fn) => {
+  let cache = {}
+  return function(...args) {
+    if (cache[args]) return cache[args]
+    else { 
+      cache[args] = fn(...args)
+      return cache[args]
+    }
+  }
+}
 ```
 </details>
   
