@@ -99,11 +99,11 @@ const flatten = (arr) => {
 #### объединить два отсортированных массива в один отсортированный  
 
 ```
-Input: 
-X = [1, 3, 5, 7]
-Y = [2, 4, 6]
-Output: [1, 2, 3, 4, 5, 6, 7]
+ const a = [1,3,4];
+ * const b = [2,3,5];
+ * merge(a, b);  // [1,2,3,3,4,5]
 ```
+  
 <details><summary> </summary>
 
 ```javascript
