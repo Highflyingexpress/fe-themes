@@ -310,7 +310,7 @@ console.log( sum(1,5)(2)() ); // 8
   
 ---
 
-#### 
+#### сумма всех age в {{...}}
 
 ```javascript
 function sumAge(user) {}
