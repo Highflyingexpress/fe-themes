@@ -161,7 +161,19 @@ console.log(flattenObj(arr1));
 <details><summary> </summary>
 
 ```javascript
+ function flattenObj(arr) {
+   let res = []
+   let stack = [...arr]
 
+    while (stack.length) {
+      let node = stack.pop()
+      for (let key in node) {
+        if (key === 'id') res.push({[key]: node[key]})
+        if (Array.isArray(node[key])) node[key].forEach((i) => stack.push(i))
+      }
+    }
+   return res
+ }
 ```
 </details>
   
