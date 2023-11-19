@@ -120,12 +120,11 @@ console.log(funcObj(users1)); //{ female: [ { id: 1, name: 'Виктория' } 
   const funcObj = (arr) => {
   let returnObj = {}
   for (let obj of arr) {
-    if (obj['gender']) {
-      let {gender, ...rest} = obj
-      if (returnObj[gender]) { 
-        returnObj[gender].push(rest)
-      }
-      else returnObj[gender] = [rest] 
+    // на всякий случай проверяем есть ли вообще ключ gender
+    if (obj['gender']) { 
+      let {gender, ...rest} = obj // вытягиваем gender и всё остальное
+      if (returnObj[gender]) returnObj[gender].push(rest) // если уже в объекте заходил гендер - пушим всё остальное
+      else returnObj[gender] = [rest] // если не было такого гендера, то присваиваем ибо впервые
     }
   }
   return returnObj
