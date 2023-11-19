@@ -5,7 +5,9 @@
 #### что выведет в консоль
   
 ```javascript
+
   let x = {a: 1, b: 2};
+
   function fn1(x) {
    x.a = 5;
   }
