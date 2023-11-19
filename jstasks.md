@@ -274,7 +274,7 @@ console.log(optionalChaining(obj, "")); /* Ответ = {
   
 ---
   
-#### carry
+#### curry
 
 ```javascript
  f(3)(4) // 7 карри изи
@@ -446,9 +446,7 @@ console.log(funcFunc(Tree)); // 111
         if (typeof node[key] === 'object' && node[key]!== null) {
            stack.push(node[key])      
         }
-        else {
           if ( typeof node[key] === 'number') result+=node[key]
-        }
       }
     }
     return result
