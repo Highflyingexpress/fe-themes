@@ -159,3 +159,12 @@ console.log(flattenObj(arr1));
   // { id: 7 },
   // { id: 8 } ]
 ```
+<details><summary> </summary>
+
+```javascript
+
+```
+</details>
+  
+---
+  
