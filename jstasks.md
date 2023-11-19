@@ -364,7 +364,9 @@ console.log(sumAge(user1)) // 100
 ```
   
 </details>
-
+  
+---
+  
 #### bankomat  
 
 ```javascript
