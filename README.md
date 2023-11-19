@@ -12,8 +12,7 @@
 [fetch with useTransition](#usetransition)  
 [props и children в пользовательский компонент](#propschildren)  
 [почему хуки нельзя использовать в if и for](#hooksif)  
-[Symbol](#symbol)  
-[javascript задачка f(x)](#jstask)  
+[Symbol](#symbol)   
   
 ---  
 [Access и refresh токены](tokens.md)  
@@ -301,34 +300,5 @@ alert(user + 500); // hint: default -> 1500
 
 ![image](https://github.com/Highflyingexpress/frontend-tricks/assets/107925514/b63c4cfe-0714-4d02-abf7-760924330341)  
   
-  
-<a id="jstask"></a> 
-## JS задачки  
-  
-```
-let x = {a: 1, b: 2};
-function fn1(x) {
- x.a = 5;
-}
-function fn2() {
-  x.a = 5;
-}
-function fn3(x) {
- x = 5;
-}
-function fn4() {
- x = 5;
-}
 
-fn1(x);
-console.log(x);
 
-fn2(); 
-console.log(x);
-
-fn3(x);
-console.log(x);
-
-fn4(); 
-console.log(x);
-```
