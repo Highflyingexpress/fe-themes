@@ -1,4 +1,5 @@
 #### [JS tasks](jstasks.md)  
+#### [js Object tasks](objecttasks.md)
 #### [Typescript notes](ts.md)  
 #### [DevTools](devtools.md)
 #### [tokens](tokens.md)  
