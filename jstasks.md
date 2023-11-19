@@ -435,7 +435,27 @@ console.log(funcFunc(Tree)); // 111
 <details><summary> </summary>
 
 ```javascript
-
+  const funcFunc = (obj) => {
+    let result = 0
+    let stack = [obj]
+                 
+    while (stack.length) {
+      let node = stack.pop()
+      
+      for (let key in node) {
+        if (typeof node[key] === 'object' && node[key]!== null) {
+           stack.push(node[key])      
+        }
+        else {
+          if ( typeof node[key] === 'number') result+=node[key]
+        }
+      }
+    }
+    return result
+  };
+  
+  console.log(funcFunc(Tree)); // 111
+  // 12 + 24 + 24 + 15 + 13 + 23 = 111
 ```
 </details>
   
