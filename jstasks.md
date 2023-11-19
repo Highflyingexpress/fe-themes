@@ -487,7 +487,19 @@ console.log(funcObj(users1)); //{ female: [ { id: 1, name: 'Виктория' } 
 <details><summary> </summary>
 
 ```javascript
-
+  const funcObj = (arr) => {
+  let returnObj = {}
+  for (let obj of arr) {
+    if (obj['gender']) {
+      let {gender, ...rest} = obj
+      if (returnObj[gender]) { 
+        returnObj[gender].push(rest)
+      }
+      else returnObj[gender] = [rest] 
+    }
+  }
+  return returnObj
+};
 ```
 </details>
   
