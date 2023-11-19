@@ -58,9 +58,9 @@ Promise.resolve().then((first) => {
 console.log("d");
 ```
 <details><summary> </summary>
-"d"
-"first:" undefined
-"second: " undefined
-"third:" "b"
-"a"
+"d"  
+"first:" undefined  
+"second: " undefined  
+"third:" "b"   
+"a"  
 </details>
