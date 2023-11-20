@@ -179,7 +179,7 @@ console.log(flattenObj(arr1));
   
 ---
   
-#### плоский объект рекурсивно  
+#### flatten nested object (в плоский объект рекурсивно)  
 <details><summary> </summary>
 
 ```javascript
