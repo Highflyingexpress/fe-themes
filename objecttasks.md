@@ -235,3 +235,37 @@ const { getName } = cat;
 console.log(getName());
   
 ```
+
+```javascript
+
+const object = {
+  who: 'World',
+  greet() {
+    return `Hello, ${this.who}!`;
+},
+  farewell: () => {
+    `Goodbye, ${this.who}!`;
+  }
+};
+
+console.log(object.greet()); 
+console.log(object.farewell()); 
+  
+```
+
+```javascript
+var length = 4;
+
+function callback() {
+ console.log(this.length); 
+}
+
+const object = {
+  length: 5,
+  method(callback) {
+  callback();
+}
+};
+
+object.method(callback);
+```
