@@ -199,4 +199,28 @@ const flattenObj = (obj) => {
 </details>
   
 ---
+
+#### всяко разно  
+  
+```javascript
+let a = {};
+let b = { key: 'test' };
+let c = { key: 'test' };
+
+a[b] = '123';
+a[c] = '456';
+
+console.log(a);
+```
+<details><summary> </summary>
+
+```javascript
+ {
+   [object Object]: "456"
+}
+```
+</details>
+  
+---
+
   
