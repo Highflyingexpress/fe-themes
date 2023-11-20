@@ -179,3 +179,24 @@ console.log(flattenObj(arr1));
   
 ---
   
+#### плоский объект рекурсивно  
+<details><summary> </summary>
+
+```javascript
+ 
+const flattenObj = (obj) => {
+  let res = {}
+  for (let key in obj) {
+    if (typeof obj[key] === 'object' && obj[key]!==null) {
+      res = {...res, ...flattenObj(obj[key])}
+    } else {
+      res[key] = obj[key]
+    }
+  }
+  return res
+}
+```
+</details>
+  
+---
+  
