@@ -33,7 +33,7 @@
   Зачастую приходится вводить дополнительные механизмы общения между клиентом и сервером, чтобы быстро понять, отвечает ли клиент.  
   
 на клиенте:  
-![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/8493542c-079f-4334-b710-a7819638b777)
+<img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/8493542c-079f-4334-b710-a7819638b777" width=700 alt="client">
 
 на сервере:  
 ![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/d4aafad7-c618-41b1-9b60-de5e6ffbd5ed)
