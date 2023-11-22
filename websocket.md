@@ -36,7 +36,8 @@
 ![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/8493542c-079f-4334-b710-a7819638b777)
 
 на сервере:  
-![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/bbd5b069-dd63-49b4-8c03-bebbc7194889)
+![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/d4aafad7-c618-41b1-9b60-de5e6ffbd5ed)
+
 
 
 
