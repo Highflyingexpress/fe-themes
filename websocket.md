@@ -31,8 +31,13 @@
   Молчаливый отвал соединения.  
   При отправке пакета в WebSocket вы не узнаете о том, доставлен ли он или нет, пока не пройдёт время таймаута — по умолчанию 75 секунд.  
   Зачастую приходится вводить дополнительные механизмы общения между клиентом и сервером, чтобы быстро понять, отвечает ли клиент.  
+  
+на клиенте:  
+![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/8493542c-079f-4334-b710-a7819638b777)
 
-![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/57472384-173a-43c5-92a3-58faab26edfd)
+на сервере:  
+![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/bbd5b069-dd63-49b4-8c03-bebbc7194889)
+
 
 
      
