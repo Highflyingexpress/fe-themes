@@ -325,3 +325,13 @@ console.log(circle.__proto__ === Circle.prototype); // true
 
 <img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/dc18a8c6-b0f1-4700-bd51-3cbaaa69cbe2" width="600"/>
 
+```javascript
+
+class User {};
+const o = new User();
+
+console.log(o.__proto__ === User.prototype)
+console.log(User.__proto__ === Function.prototype)
+console.log(User.__proto__ === Object.__proto__)
+
+```
