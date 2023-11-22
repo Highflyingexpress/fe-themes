@@ -5,6 +5,7 @@
 #### [DevTools](devtools.md)
 #### [tokens](tokens.md)  
 #### [Git magic](gitmagic.md)
+#### [Websockets](websocket.md)
 
 ---  
   
