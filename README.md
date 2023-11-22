@@ -338,3 +338,10 @@ console.log(User.__proto__ === Object.__proto__)
 console.log(Function.prototype === Object.__proto__)
 console.log(Function.prototype === Function.__proto__)
 ```
+  
+```javascript
+
+console.log(Object.__proto__.__proto__.__proto__) // null
+console.log(Object.prototype.__proto__) // null
+
+```
