@@ -332,6 +332,7 @@ const o = new User();
 
 console.log(o.__proto__ === User.prototype)
 console.log(User.__proto__ === Function.prototype)
+console.log(User.__proto__ === Function.__proto__)
 console.log(User.__proto__ === Object.__proto__)
 
 ```
