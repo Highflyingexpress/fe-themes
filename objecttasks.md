@@ -33,9 +33,53 @@
   fn4(); 
   console.log(x);
 ```
+
+```javascript
+let a = (};
+const fn = (a) => {
+   a.prop = 'hello';
+   a = null;
+}
+fn(a);
+console.log(a);
+  
+// все аргументы функции являются локальными переменными
+// но имея общую ссылку мы можем менять объект
+  
+```
   
 ---
-  
+
+#### опять что в консоль  
+
+```javascript
+
+const fn = () => console.log(this.prop);
+
+const o = {
+  prop: 'prop',
+  method() {
+    fn();
+  }
+}
+
+o.method();
+
+//////////////
+
+const o = {
+  prop: 'prop',
+  method() {
+    const fn = () => console.log(this.prop);
+    fn();
+  }
+}
+
+o.method();
+
+```
+
+
 #### Написать функцию, которая суммирует все значения дерева. решить без рекурсии. Вложенность объекта любая  
 ```javascript
 const Tree = {
