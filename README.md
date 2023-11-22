@@ -335,4 +335,6 @@ console.log(User.__proto__ === Function.prototype)
 console.log(User.__proto__ === Function.__proto__)
 console.log(User.__proto__ === Object.__proto__)
 
+console.log(Function.prototype === Object.__proto__)
+console.log(Function.prototype === Function.__proto__)
 ```
