@@ -1,4 +1,4 @@
-[почитать доку](https://learn.javascript.ru/websockets)  
+[почитать доку](https://learn.javascript.ru/websocket)  
   
 В общем виде механизм веб-сокета работает так:  
   
