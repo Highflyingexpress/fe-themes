@@ -323,5 +323,5 @@ console.log(circle.__proto__ === Circle.prototype); // true
 Когда вы используете `__proto__`, вы ищете свойства и методы в цепочке прототипов объекта.  
 С другой стороны, `prototype` определяет общие свойства и методы, которые будут иметь все экземпляры, созданные из функции-конструктора. 
 
-<img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/dc18a8c6-b0f1-4700-bd51-3cbaaa69cbe2" width=600>
+<img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/dc18a8c6-b0f1-4700-bd51-3cbaaa69cbe2" width="600"/>
 
