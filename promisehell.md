@@ -1,4 +1,33 @@
 ```javascript
+
+async function fn () {
+  console.log(1);
+  await setTimeout(() => {
+    console.log('delay');
+  }, 2000);
+  console.log(2);
+}
+fn();
+
+// 1 2 delay
+/////////////////
+
+async function fn () {
+  console.log(1);
+  await new Promise ((resolve) => {
+    setTimeout(() => {
+      resolve()
+      console.log('delay');
+  }, 2000);
+  console.log(2);
+}
+fn();
+
+// 1 delay 2
+
+```
+  
+```javascript
 function a() { 
   console.log('1') 
   Promise.resolve().then(a) 
