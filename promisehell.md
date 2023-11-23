@@ -26,6 +26,8 @@ fn();
 // 1 delay 2
 
 ```
+
+---
   
 ```javascript
 function a() { 
