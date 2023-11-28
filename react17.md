@@ -11,4 +11,7 @@ const batchUpdate = unstable_batchedUpdates(() => {
 
 batchUpdate() //this will group all state changes inside and apply it in one re-render
 ```  
-   
+  
+batch() в redux  
+  
+<img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/dc435b37-399f-4f7d-89e8-d3bdaebfb13c" width="500">
