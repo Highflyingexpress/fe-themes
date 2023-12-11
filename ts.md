@@ -1,6 +1,27 @@
 ```javascript
+
+import { ReactElement } from "react";
+export function bindProps<Props extends {}, BoundKeys extends keyof Props>(
+  Component: (props: Props) => ReactElement,
+  boundProps: Pick<Props, BoundKeys>,
+  displayName?: string
+  function ResultCompoent(newProps: Omit<Props, BoundKeys>) {
+    const props = { …boundProps, …newProps } as Props;
+    return <Component {…props} />;
+I }
+  ResultCompoent.displayName displayName ?? Component.name + "WithProps";
+
+  return ResultCompoent;
+}
+
+```
+
+  применение:
+```javascript
+
 import { Button } from "./button";
 import { bindProps } from "./bind-props";
+
 const RedButton = bindProps(Button,
   {
     className: "mt-4 bg-red-500",
