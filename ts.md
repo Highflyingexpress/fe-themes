@@ -1,4 +1,6 @@
-##### Types vs Interface  
+#### Types vs Interface  
+
+https://www.youtube.com/watch?v=Idf0zh9f3qQ  
 
 Type  
 <img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/f7487b55-614c-4a01-93e9-059c7a6c7fb0" width=400>  
