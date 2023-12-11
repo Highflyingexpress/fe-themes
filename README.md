@@ -1,8 +1,12 @@
+#### [Typescript notes](ts.md)
 #### [React 17](react17.md)
+  
+<hr></hr>  
+
 #### [JS tasks](jstasks.md)  
 #### [js Object tasks](objecttasks.md)
 #### [Promise hell](promisehell.md)
-#### [Typescript notes](ts.md)  
+  
 #### [DevTools](devtools.md)
 #### [tokens](tokens.md)  
 #### [Git magic](gitmagic.md)
