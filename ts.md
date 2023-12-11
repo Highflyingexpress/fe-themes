@@ -1,3 +1,5 @@
+забиндить пропсы компонента  
+  
 ```javascript
 
 import { ReactElement } from "react";
