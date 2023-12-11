@@ -1,6 +1,6 @@
 ##### pretty Readonly
 
-<img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/4a2c75e8-2e97-403b-88e4-904f4acab94d" width=500>  
+<img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/4a2c75e8-2e97-403b-88e4-904f4acab94d" width=700>  
   
   
 #### Types vs Interface  
