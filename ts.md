@@ -1,4 +1,12 @@
-забиндить пропсы компонента  
+##### Types vs Interface  
+
+Type  
+![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/f7487b55-614c-4a01-93e9-059c7a6c7fb0)
+Interface  
+![image](https://github.com/Highflyingexpress/fe-themes/assets/107925514/95dab563-7517-4e05-9cfe-49412102b1d8)
+  
+
+##### забиндить пропсы компонента  
   
 ```javascript
 
