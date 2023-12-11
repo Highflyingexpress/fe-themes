@@ -40,6 +40,8 @@ export default function App() {
 }
 
 ```
+видео https://youtu.be/18D0wpbCw8E?si=4h9cxiGoF7C0qXDj
+
 
 ### JSX global
 
