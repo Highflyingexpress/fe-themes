@@ -1,5 +1,6 @@
 #### [Typescript notes](ts.md)
 #### [React 17](react17.md)
+#### [Abort Controller](#ac)
   
 <hr></hr>  
 
@@ -26,6 +27,10 @@
 [Access и refresh токены](tokens.md)  
 
 ---
+<a id="ac"></a>  
+
+Тут 4 способа добавления таймаутов к асинхронному API (на примере fetch), конечно fetch поддерживает AbortController, но не все знают про AbortSignal.timeout() и есть API без такой поддержки, так что сравнить есть что. Больше примеров тут:  
+Abort Controllers https://github.com/HowProgrammingWorks/AbortController/tree/main/JavaScript
   
 <a id="mockserver"></a>
 ## Как мокать данные с сервера
