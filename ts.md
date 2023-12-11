@@ -1,3 +1,8 @@
+##### pretty Readonly
+
+<img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/4a2c75e8-2e97-403b-88e4-904f4acab94d" width=500>  
+  
+  
 #### Types vs Interface  
 
 https://www.youtube.com/watch?v=Idf0zh9f3qQ  
