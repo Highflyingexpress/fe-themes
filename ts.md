@@ -5,7 +5,7 @@ Type
 Interface  
 <img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/95dab563-7517-4e05-9cfe-49412102b1d8" width=500>
   
-кортеж  и тип и интерфейс на скрине:
+кортеж  и тип и интерфейс на скрине:  
 <img src="https://github.com/Highflyingexpress/fe-themes/assets/107925514/021939c9-493d-446e-8eca-c8c9a19008a0" width=500>
 
 ##### забиндить пропсы компонента  
